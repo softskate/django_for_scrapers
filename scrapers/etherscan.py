@@ -42,7 +42,7 @@ def fetch_url(url, retries=30):
         time.sleep(5)
 
 
-proxy = "http://P2j6nY5ZqsxtfCTwc9kB:RNW78Fm5@pool.infatica.io:10210"
+proxy = ""
 proxy_handler = urllib.request.ProxyHandler({"http": proxy, "https": proxy})
 opener = urllib.request.build_opener(proxy_handler)
 urllib.request.install_opener(opener)
