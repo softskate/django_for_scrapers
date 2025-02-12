@@ -1,0 +1,9 @@
+{% extends "admin/change_list.html" %}
+{% block extrahead %}
+{{ block.super }}
+<script>
+    setInterval(() => {
+        location.reload();
+    }, 5000);  // Обновление каждые 5 секунд
+</script>
+{% endblock %}
